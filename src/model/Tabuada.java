@@ -32,12 +32,14 @@ public double getMaximoMultiplicador() {
 public void mostrarTabuada() {
 	
 	
-	double produto = multiplicando * minimoMultiplicador;
+	double contador = minimoMultiplicador;
+			
 		while (contador <= maximoMultiplicador ) {
-			contador
+			
+			double produto = multiplicando * contador;
 			System.out.println(multiplicando + " x " + contador + " = " + produto);
 			
-			minimoMultiplicador = maximoMultiplicador + 1 ;
+			contador = contador + 1 ;
 		}
 		
 	System.out.println("Fim");

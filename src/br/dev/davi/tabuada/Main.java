@@ -1,18 +1,15 @@
 package br.dev.davi.tabuada;
 
+import br.dev.davi.tabuada.gui.TelaTabuada;
 import model.Tabuada;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-	
-		Tabuada t1 = new  Tabuada();
-		t1.setMultiplicando(8);
-		t1.setMinimoMultiplicando(20);
-		t1.setMaximoMultiplicador(10);
-		t1.mostrarTabuada();
-		
+	TelaTabuada tela = new TelaTabuada(); 
+	tela.criarTelaTabuada();
+			
 	}
 }
 	
