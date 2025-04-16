@@ -29,17 +29,17 @@ public void setMaximoMultiplicador(double maximomultiplicador) {
 public double getMaximoMultiplicador() {
 	return maximoMultiplicador;
 }
+
+
 public void mostrarTabuada() {
+	double tamanho = maximoMultiplicador - minimoMultiplicador + 1;
 	
-	
-	double contador = minimoMultiplicador;
-			
-		while (contador <= maximoMultiplicador ) {
-			
-			double produto = multiplicando * contador;
-			System.out.println(multiplicando + " x " + contador + " = " + produto);
-			
-			contador = contador + 1 ;
+	String[] tabuada = new String[(int) tamanho ];
+
+		while (minimoMultiplicador <= maximoMultiplicador ) {
+			double produto = multiplicando * minimoMultiplicador;
+			System.out.println(multiplicando + " x " + minimoMultiplicador + " = " + produto);
+			minimoMultiplicador = minimoMultiplicador + 1 ;
 		}
 		
 	System.out.println("Fim");
